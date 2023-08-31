@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.row {
+    display: flex;
+}
+
+.col, .col-2, .col-3 {
+    padding: 15px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.col {
+    background-color: lightblue;
+    flex: 1;
+}
+.col-2 {
+    background-color: thistle;
+    flex: 2;
+}
+.col-3 {
+    background-color: lavenderblush;
+    flex: 3;
+}
