@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <!--  -->
+    <div class="navbar">
+        <div class="flex-navbar">
+            <ul class="nav-links">
+                <h1 class="nav-title"><a href="#">Profile</a></h1>
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+            <button class="btn">Sign Out</button>
+        </div>
+    </div>
+    <div class="flex-container">
+        <!-- User Information -->
+        <div class="flex-left">
+            <div class="user-card">
+                <div class="user-header">
+                    <img src="./assets/images/jane-m.jpg" alt="user-icon" class="avatar-m">
+                </div>
+                <div class="card-information">
+                    <h2>Jane Doe</h2>
+                    <div class="user-location">
+                        <img src="./assets/icons/map-marker.png" alt="map-marker-icon">
+                        <h3>Seattle</h3>
+                    </div>
+                    <div class="user-description">
+                        <p>Developer | Engineer | Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                    </div>
+                    <a href="#" class="user-settings">
+                        <img src="./assets/icons/gear.png" alt="gear-icon">
+                        <span>edit profile</span>
+                    </a>
+                </div>
+            </div>
+            <!--  -->
+            <div class="user-education-card">
+                <div class="card-header">
+                    <h3>Education</h3>
+                </div>
+                <div class="card-information">
+                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                    <h4 id="education-timestamp">Dec 2019 - Mar 2020</h4>
+                    <p>Triple black belt in Python, MERN, and C#</p>
+                </div>
+            </div>
+        </div>
+        <!-- Connection Information -->
+        <div class="flex-right">
+            <div class="connections-card">
+                <div class="card-header">
+                    <span>2</span>
+                    <h3>Connection Requests</h3>
+                </div>
+                <div class="request-card">
+                    <h4>
+                        <img src="./assets/images/todd-s.jpg" alt="todd-s-avatar" class="avatar-sm"> Todd E
+                    </h4>
+                    <div class="request-btns">
+                        <a href="#"><img src="./assets/icons/accept-circle.png" alt="accept-icon" class="btn-sm"></a>
+                        <a href="#"><img src="./assets/icons/close-circle.png" alt="decline-icon" class="btn-sm"></a>
+                    </div>
+                </div>
+                <div class="request-card">
+                    <h4>
+                        <img src="./assets/images/phil-s.jpg" alt="phil-s-avatar" class="avatar-sm"> Phil K
+                    </h4>
+                    <div class="request-btns">
+                        <a href="#"><img src="./assets/icons/accept-circle.png" alt="accept-icon" class="btn-sm"></a>
+                        <a href="#"><img src="./assets/icons/close-circle.png" alt="decline-icon" class="btn-sm"></a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="user-connections-card">
+                <div class="card-header">
+                    <span>500+</span>
+                    <h3>Your Connections</h3>
+                </div>
+                <div class="connected-card">
+                    <h4>
+                        <img src="./assets/images/adrien-s.jpg" alt="adrien-s-avatar" class="avatar-sm"> Adrien D
+                    </h4>
+                    <div class="request-btns">
+                        <a href="#"><img src="./assets/icons/accept-circle.png" alt="accept-icon" class="btn-sm"></a>
+                        <a href="#"><img src="./assets/icons/close-circle.png" alt="decline-icon" class="btn-sm"></a>
+                    </div>
+                </div>
+                <div class="connected-card">
+                    <h4>
+                        <img src="./assets/images/anne-s.jpg" alt="anne-s-avatar" class="avatar-sm"> Anne J
+                    </h4>
+                    <div class="request-btns">
+                        <a href="#"><img src="./assets/icons/accept-circle.png" alt="accept-icon" class="btn-sm"></a>
+                        <a href="#"><img src="./assets/icons/close-circle.png" alt="decline-icon" class="btn-sm"></a>
+                    </div>
+                </div>
+                <div class="connected-card">
+                    <h4>
+                        <img src="./assets/images/alayne-s.jpg" alt="alayne-s-avatar" class="avatar-sm"> Alayne T
+                    </h4>
+                    <div class="request-btns">
+                        <a href="#"><img src="./assets/icons/accept-circle.png" alt="accept-icon" class="btn-sm"></a>
+                        <a href="#"><img src="./assets/icons/close-circle.png" alt="decline-icon" class="btn-sm"></a>
+                    </div>
+                </div>
+                <div class="connected-card">
+                    <h4>
+                        <img src="./assets/images/arry-s.jpg" alt="arry-s-avatar" class="avatar-sm"> Arry Y
+                    </h4>
+                    <div class="request-btns">
+                        <a href="#"><img src="./assets/icons/accept-circle.png" alt="accept-icon" class="btn-sm"></a>
+                        <a href="#"><img src="./assets/icons/close-circle.png" alt="decline-icon" class="btn-sm"></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="view-more-tab">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

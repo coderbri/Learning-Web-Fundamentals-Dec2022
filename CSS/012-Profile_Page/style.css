@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+img {
+    height: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* NAVBAR CSS */
+.navbar {
+    background-color: #292929;
+    color: #fff;
+    /* width: 100%; */
+    padding: 10px 20px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.flex-navbar {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links .active {
+    color: #fff;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none; /* Removes bullet points */
+}
+.nav-links a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.btn {
+    color: #fff;
+    background-color: rgb(70, 154, 180);
+    border: 3px solid #000;
+    padding: 5px 10px;
+    font-size: medium;
+    font-weight: 500;
+    box-shadow: 3px 4px #000;
+}
+
+
+/* PROFILE PAGE CSS */
+.flex-container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.user-card, .user-education-card, .connections-card, .user-connections-card {
+    background-color: #fff;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.card-header {
+    background-color: #292929;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .75rem;
+}
+.card-information {
+    padding: 1.25rem;
+}
+
+
+.flex-left, .flex-right {
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.flex-left {
+    flex: 2;
+    margin-right: 2rem;
+}
+.flex-right {
+    flex: 1;
+}
+
+/* USER CARD */
+.user-card, .connections-card {
+    margin-bottom: 1rem;
+}
+
+.user-header {
+    background-color: rgb(70, 154, 180);
+    height: 100px;
+}
+
+img.avatar-m {
+    height: 90px;
+    border: 3px solid #fff;
+    box-shadow: 1px 3px 2px grey;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.user-location, .card-information h4 {
+    margin-top: 0.5rem;
+}
+.user-description, .user-settings, .card-information p {
+    margin-top: 0.75rem;
+}
+
+.user-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-settings {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+}
+.user-settings, .view-more-tab a {
+    color: rgb(24, 115, 189);
+}
+
+/* EDUCATION CARD */
+#education-timestamp {
+    font-weight: 500;
+    color: grey;
+}
+
+/* CONNECTIONS CARD */
+.card-header span {
+    background-color: gainsboro;
+    color: black;
+    font-weight: 500;
+    border-radius: 50%;
+    border: none;
+    /* padding: 10px; */
+}
+
+.connections-card .card-header span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.request-card, .connected-card, .view-more-tab {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.request-card h4, .connected-card h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+img.avatar-sm, .btn-sm {
+    height: 35px;
+    border-radius: 50%;
+}
+img.avatar-sm {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* USER CONNECTIONS CARD */
+.user-connections-card .card-header span {
+    padding: 5px 10px;
+}
