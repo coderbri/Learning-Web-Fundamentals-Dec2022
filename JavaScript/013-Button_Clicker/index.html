@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <header class="Dojonary__Header">
+        <a href="#" class="header-title">
+            <h1>Dojonary</h1>
+        </a>
+        <input type="text" placeholder="Search" class="search-field-input">
+        <button onclick="login(this)" class="login-btn">Login</button>
+    </header>
+    <!--  -->
+    <div class="container">
+        <div id="Left_Column">
+            <div class="definition-card">
+                <div class="flex-one">
+                    <h2 class="definition-title">ninja</h2>
+                    <h3 class="definition-part-of-speech">noun</h3>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button onclick="message()" class="like-btn"><span>13</span> Likes</button>
+                </div>
+                <div class="flex-two">
+                    <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjitsu</a></p>
+                </div>
+            </div>
+            <div class="definition-card">
+                <div class="flex-one">
+                    <h2 class="definition-title">ninja</h2>
+                    <h3 class="definition-part-of-speech">noun</h3>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button onclick="message()" class="like-btn"><span>37</span> Likes</button>
+                </div>
+                <div class="flex-two">
+                    <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div id="Right_Column">
+            <div class="add-definition-box">
+                <h3 class="catchphrase">Dojonary is defined by <span id="bold-YOU">YOU</span></h3>
+                <button onclick="hide(this)" class="add-definition-btn">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

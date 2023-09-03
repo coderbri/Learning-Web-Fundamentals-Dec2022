@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* margin: 0 auto; */
+    /* outline: 1px dotted thistle; */
+}
+
+body {
+    width: 80%; /* Set the width of the content area */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+
+a {
+    color: rgb(45, 102, 149);
+    font-weight: 500;
+}
+
+/** ~ HEADER ~ **/
+.Dojonary__Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gainsboro;
+    padding: 10px 20px;
+    margin-bottom: 2rem;
+}
+
+.header-title {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.search-field-input {
+    width: 300px;
+    height: 27px;
+    padding: 0 10px;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+.login-btn, .like-btn, .add-definition-btn {
+    color: #fff;
+    background-color: royalblue;
+    border: 3px solid #000;
+    padding: 3px 15px;
+    font-size: normal;
+    box-shadow: 3px 3px #000;
+    cursor: pointer;
+}
+.login-btn:active, .like-btn:active, .add-definition-btn:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px #000;
+}
+
+.login-btn:active {
+    background-color: rgb(44, 81, 191);
+}
+
+/** ~ BODY ~ **/
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#Left_Column {
+    flex: 3;
+}
+
+#Right_Column {
+    flex: 1;
+}
+
+
+/** ~ DEFINITION CARD ~ **/
+.definition-card, .add-definition-box {
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+}
+
+.definition-card {
+    display: flex;
+}
+
+.flex-one {
+    flex: 1;
+    text-align: center;
+    line-height: 1.9rem;
+}
+
+.flex-two {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.definition-title {
+    font-weight: 500;
+    font-size: xx-large;
+}
+
+.definition-part-of-speech {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.like-btn {
+    background-color: gold;
+    color: #000;
+    font-weight: 500;
+    padding: 5px 20px;
+    margin-top: 1rem;
+}
+.like-btn:active {
+    background-color: goldenrod;
+}
+
+/** ~ ADD DEFINITION BTN ~ **/
+.add-definition-box {
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Add this line to center horizontally */
+    text-align: center; /* Add this line to center text */
+}
+
+h3.catchphrase {
+    font-weight: 500;
+    text-align: start; /* Add this line to center text */
+}
+
+span#bold-YOU {
+    font-weight: 700;
+}
+
+.add-definition-btn {
+    background-color: rgb(106, 177, 84);
+    color: #000;
+    font-weight: 500;
+    font-size: medium;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 5px 0;
+}
+
+.add-definition-btn:active {
+    background-color: green;
+}
