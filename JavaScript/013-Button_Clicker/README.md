@@ -4,23 +4,32 @@ Objective of **Project #013: Button Clicker** is to add JavaScript functionality
 
 <div align="center">
 <img src="./assets/img/dojonary-webpage.png" height="300px">
+</div>
 
 ---
 
-`login()` function toggles the "Login" and "Logout" keyword:
+## Login Functionality
 
-<img src="./assets/login-demo.gif" height="265px">
+The `login()` function toggles the "Login" and "Logout" keywords.
 
+<img src="./assets/login-demo.gif" width="400px" height="auto">
 
-`message()` function alerts the user that the definition has been liked:
+---
 
-<img src="./assets/message-demo.gif" height="265px">
+## Message Alert
 
+The `message()` function alerts the user that the definition has been liked.
 
-`hide()` function removes the "Add Definition" button upon interaction:
+<img src="./assets/message-demo.gif" width="400px" height="auto">
 
-<img src="./assets/hide-demo.gif" height="265px">
+---
 
-</div>
+## Hide Button
+
+The `hide()` function removes the "Add Definition" button upon interaction.
+
+<img src="./assets/hide-demo.gif" width="400px" height="auto">
+
+---
 
 Redone: ２０２３年０9月０２日（土）
