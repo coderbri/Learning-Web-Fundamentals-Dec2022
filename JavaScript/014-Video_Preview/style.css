@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* outline: 1px dotted thistle; */
+}
+
+html {
+    background: linear-gradient(to top, #d9d3e4, #ffffff);
+    /* height: 100%; */
+}
+
+a {
+    color: rgb(45, 102, 149);
+    font-weight: 500;
+}
+
+img {
+    height: 40px;
+}
+
+/** ~ NAVIGATION HEADER ~ **/
+.navbar {
+    background-color: #232323;
+    padding: 10px 20px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.videolab-title {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.search-field-input {
+    width: 300px;
+    height: 27px;
+    padding: 0 10px;
+    border: 2px solid #808080;
+    border-radius: 3px;
+}
+
+.login-btn, .subscribe-btn {
+    color: #fff;
+    /* background-color: #7A5DC7; */
+    background-color: #807fc2;
+    border: 3px solid #000;
+    padding: 3px 15px;
+    font-size: normal;
+    box-shadow: 3px 3px #000;
+    cursor: pointer;
+}
+.login-btn:active, .subscribe-btn:active {
+    background-color: #5453A6;
+    transform: translateY(2px);
+    box-shadow: 1px 1px #000;
+}
+
+
+/** ~ CONTAINER ~ **/
+.flex-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 
+#Left_Column__Video_and_Details {
+    flex: 3;
+}
+#Right__Column {
+    flex: 1;
+    padding: 10px;
+}
+*/
+
+/** ~ VIDEO PLAYER ~ **/
+.video-details-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-details {
+    line-height: 1.5rem;
+}
+
+.main-video-title {
+    padding: 5px 0;
+}
+
+.user-channel-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.user-channel-span {
+    color: #5453A6;
+}
+
+.subscribe-btn {
+    padding: 5px 20px;
+    font-size: medium;
+    margin-right: 0.5rem;
+}
+
+/** ~ VIDEOS ~ **/
+
+.sub-header-title {
+    padding: 10px 0;
+}
+
+.video-sm-flex {
+    /* display: flex;
+    align-items: center;
+    gap: 1rem; */
+    margin: 10px 0;
+}
+
+.video-thumbnail-sm {
+    width: 270px;
+    height: 180px;
+}
+
+
+.video-sm-details-flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-avatar-sm {
+    height: 30px;
+}
+
+.video-sm-title {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.video-sm-stats {
+    color: grey;
+    font-size: small;
+}
+
+

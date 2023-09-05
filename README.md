@@ -18,7 +18,7 @@ Course Taken: ２０２２年１２月
     - [#012: Profile Page](CSS/012-Profile_Page)
 - JavaScript
     - [#013: Button Clicker](JavaScript/013-Button_Clicker)
-    - [#014: Video Preview](#)
-    - [#015: Likes](#)
+    - [#014: Video Preview](JavaScript/014-Video_Preview)
+    - [#015: Likes](JavaScript/015-Likes)
     - [#016: Making Connections](#)
     - [#017: DojoWeather](#)

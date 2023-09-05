@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>VideoLab</title>
+</head>
+<body>
+    <nav id="VideoLab__Header" class="navbar">
+        <a href="#" class="videolab-title">
+            <h1>VideoLab</h1>
+        </a>
+        <input type="text" placeholder="Search" class="search-field-input">
+        <button class="login-btn">Login</button>
+    </nav>
+    <!--  -->
+    <div class="flex-container">
+        <div id="Left_Column__Video_and_Details">
+            <!-- Video Playback -->
+            <video id="videoPlayer" src="./assets/vids/cat_looking_around (1080p).mp4" width="720" height="400" controls muted loop></video>
+            <!-- ? Alternative Code ~
+            <video id="videoPlayer" src="./assets/vid/cat_looking_around (1080p).mp4" width="720" height="400" controls muted loop onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" ></video>
+            -->
+            
+            <!-- ? VIDEO PLACEHOLDER ~
+            <figure class="placeholder">
+                <svg style="text-anchor:middle;" width="720" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x400" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect>
+                    <text x="50%" y="50%" dy=".3em" fill="#dee2e6" >Replace Me!</text>
+                </svg>
+            </figure>
+            ~ -->
+            
+            <!-- Video Info -->
+            <div class="video-details-row">
+                <div class="video-details">
+                    <h2 class="main-video-title">Cat Looking Around</h3>
+                    <p>1.3K Views | September 5, 2023</p>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+            <a href="#" class="user-channel-link">
+                <img src="./assets/icons/user-circle.png" alt="user-avatar" class="user-avatar-md">
+                <span class="user-channel-span">Example User Name</span>
+            </a>
+        </div>
+        <div id="Right__Column">
+            <h3 class="sub-header-title">Up Next</h3>
+            <hr>
+            <!-- Video List - Row -->
+            <div class="video-sm-flex">
+                <!-- <img src="assets/imgs/video-placeholder.png" alt="video-thumbnail" class="video-thumbnail-sm"> -->
+                <video src="./assets/vids/production_id_4403345 (1080p).mp4" height="150" muted loop onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+                <div class="video-sm-details-flex">
+                    <img src="./assets/icons/user-circle.png" alt="user-avatar" class="user-avatar-sm">
+                    <div>
+                        <h4 class="video-sm-title">A Person Touching the Ducklings</h4>
+                        <p class="video-sm-stats">鸭子DuckGoose • 2K views • 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-sm-flex">
+                <img src="assets/imgs/video-placeholder.png" alt="video-thumbnail" class="video-thumbnail-sm">
+                <div class="video-sm-details-flex">
+                    <img src="./assets/icons/user-circle.png" alt="user-avatar" class="user-avatar-sm">
+                    <div>
+                        <h4 class="video-sm-title">Typing Of Codes</h4>
+                        <p class="video-sm-stats">Code Ninja • 5.5K views • 2 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-sm-flex">
+                <img src="assets/imgs/video-placeholder.png" alt="video-thumbnail" class="video-thumbnail-sm">
+                <div class="video-sm-details-flex">
+                    <img src="./assets/icons/user-circle.png" alt="user-avatar" class="user-avatar-sm">
+                    <div>
+                        <h4 class="video-sm-title">24 Books for 2024</h4>
+                        <p class="video-sm-stats">Bookworm송이 • 36K views • 5 days ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-sm-flex">
+                <img src="assets/imgs/video-placeholder.png" alt="video-thumbnail" class="video-thumbnail-sm">
+                <div class="video-sm-details-flex">
+                    <img src="./assets/icons/user-circle.png" alt="user-avatar" class="user-avatar-sm">
+                    <div>
+                        <h4 class="video-sm-title">Red Velvet 레드벨벳 'Psycho' MV</h4>
+                        <p class="video-sm-stats">SMTOWN • 373M views • 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
