@@ -5,7 +5,7 @@ Objective of **Project #016: Making Connections**: is to use `onclick` events an
 ## Web Page Responsiveness
 
 <div align="center">
-<img src="./assets/demo-imgs/making-connections-webpage-responsiveness-demo.gif" width="300px" height="auto">
+<img src="./assets/demo-imgs/making-connections-webpage-responsiveness-demo.gif" width="450px" height="auto">
 </div>
 
 ---
@@ -19,7 +19,7 @@ Objective of **Project #016: Making Connections**: is to use `onclick` events an
 3. **`decline(requestId)`** is called when the "decline" button next to a connection request is clicked. It takes the requestId as a parameter, which is the ID of the request card that needs to be declined. It removes the request card from the DOM using `element.remove()` and decrements the request count displayed in the requestSpan element.
 
 <div align="center">
-<img src="./assets/demo-imgs/making-connections-js-demo.gif" width="300px" height="auto">
+<img src="./assets/demo-imgs/making-connections-js-demo.gif" width="450px" height="auto">
 </div>
 
 ---
