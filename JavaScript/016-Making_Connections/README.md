@@ -1,26 +1,27 @@
 # Making Connections
 
-<!-- Objective of **Project #016: Making Connections**: is to use `onclick` events and `querySelector` to add like functionality on the website below: -->
+Objective of **Project #016: Making Connections**: is to use `onclick` events and `querySelector` to add like functionality on the website below:
 
-
-<!-- ## Web page Responsiveness
-
-In this project, I've experimented with modern CSS to achieve web page responsivess for different screen sizes:
+## Web Page Responsiveness
 
 <div align="center">
-<img src="./assets/imgs/likes-webpage-responsiveness-demo.gif" height="300px">
+<img src="./assets/demo-imgs/making-connections-webpage-responsiveness-demo.gif" width="300px" height="auto">
 </div>
 
 ---
 
-## Like Funcionality
+## Making Connections Functionality
 
-The `likePost()` function allows users to interact with the web page by liking individual posts, and it updates the displayed like counts dynamically when the user clicks the "Like" button for a post. The code demonstrates a basic example of handling user interactions in a web page using JavaScript.
+1. **`editUsername()`** is called when the "edit profile" link is clicked. It updates the text content of the username element to "Abigail G". Essentially, it changes the displayed username.
+
+2. **`accept(requestId)`** is called when the "accept" button next to a connection request is clicked. It takes the requestId as a parameter, which is the ID of the request card that needs to be accepted. It removes the request card from the DOM using `element.remove()`, decrements the request count displayed in the `requestSpan` element, and increments the connection count displayed in the `connectionSpan` element. It does this by converting the text content of `connectionSpan` to a number using `parseInt`, incrementing it, and then updating the text content with the new value.
+
+3. **`decline(requestId)`** is called when the "decline" button next to a connection request is clicked. It takes the requestId as a parameter, which is the ID of the request card that needs to be declined. It removes the request card from the DOM using `element.remove()` and decrements the request count displayed in the requestSpan element.
 
 <div align="center">
-<img src="./assets/imgs/likes-demo.gif" height="300px">
+<img src="./assets/demo-imgs/making-connections-js-demo.gif" width="300px" height="auto">
 </div>
 
---- -->
+---
 
-Redone: ２０２３年０９月０５日（火）
+Redone: ２０２３年０９月０６日（水）
