@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Likes</title>
+</head>
+<body>
+    <nav class="nav-bg-dark">
+        <h1 class="site-title">Network</h1>
+    </nav>
+    <div class="container">
+        <h2>Your Feed</h2>
+        
+        <div class="flex-container">
+            <div class="col-left">
+                <div class="user-card">
+                    <img src="./assets/icons/user-circle.png" alt="user-avatar">
+                    <a href="#" class="user-avatar-link">Add an avatar</a>
+                    <h3 class="user-name">James Doe</h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-right">
+                
+                <div class="post-card">
+                    <div class="user-and-likes-flex">
+                        <h4>Neil M</h4>
+                        <div class="likes-counter-btn-flex">
+                            <p><span id="like-count-1">9</span> like(s)</p>
+                            <button onclick="likePost(0)" class="like-btn">Like</button>
+                        </div>
+                    </div>
+                    <p class="post-content">I just set up a new discord bot, let me know what you all think. <a href="#">link</a></p>
+                </div>
+                
+                <div class="post-card">
+                    <div class="user-and-likes-flex">
+                        <h4>Nichole K</h4>
+                        <div class="likes-counter-btn-flex">
+                            <p><span id="like-count-2">12</span> like(s)</p>
+                            <button onclick="likePost(1)" class="like-btn">Like</button>
+                        </div>
+                    </div>
+                    <p class="post-content">Just finished my <a href="#">next comic</a>, check it out</p>
+                </div>
+                
+                <div class="post-card">
+                    <div class="user-and-likes-flex">
+                        <h4>Jim R</h4>
+                        <div class="likes-counter-btn-flex">
+                            <p><span id="like-count-3">9</span> like(s)</p>
+                            <button onclick="likePost(2)" class="like-btn">Like</button>
+                        </div>
+                    </div>
+                    <p class="post-content">I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
