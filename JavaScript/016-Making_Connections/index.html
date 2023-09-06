@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Making Connections</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h1 class="site-title">Profile</h1>
+        <div class="nav-links-and-signout">
+            <ul class="nav-links">
+                <li>Home</li>
+                <li class="active-link">My Profile</li>
+                <li>Find Connections</li>
+            </ul>
+            <button class="signout-btn">Sign Out</button>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+        <div class="column-left">
+            <div class="user-card">
+                <div class="user-header">
+                    <img src="./assets/images/jane-m.jpg" alt="Jane-Doe-avatar" class="avatar-md">
+                </div>
+                <div class="user-information">
+                    <h2 id="username">Jane Doe</h2>
+                    <h3 class="user-location">
+                        <img src="./assets/icons/map-marker.png" alt="map-marker" class="icon-sm">
+                        <span>Seattle</span>
+                    </h3>
+                    <p class="user-description">Developer | Engineer | Problem Solver <br> Master of shadows and the internet!</p>
+                    <a href="#" class="user-settings" onclick="editUsername()">
+                        <img src="./assets/icons/gear.png" alt="settings-gear-icon" class="icon-sm">
+                        <span>edit profile</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="education-card">
+                <div class="card-header">
+                    <h3>Education</h3>
+                </div>
+                <div class="card-information">
+                    <h2>Coding Dojo — Full Stack Bootcamp</h2>
+                    <h4 class="education-timestamp">Dec 2019 - Mar 2020</h4>
+                    <p>Triple black belt in Python, MERN, and C#</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="column-right">
+            <div class="pending-connections-card">
+                <div class="card-header">
+                    <span id="requests">2</span>
+                    <h3>Connection Requests</h3>
+                </div>
+                
+                <div class="request-card" id="request-1">
+                    <h4>
+                        <img src="./assets/images/todd-s.jpg" alt="todd-sm-avatar" class="avatar-sm">
+                        <span>Todd E</span>
+                    </h4>
+                    <div class="action-btns">
+                        <a href="#" onclick="accept('#request-1')">
+                            <img src="./assets/icons/accept-circle.png" alt="accept-icon" class="btn-sm">
+                        </a>
+                        <a href="#" onclick="decline('#request-1')">
+                            <img src="./assets/icons/close-circle.png" alt="decline-icon" class="btn-sm">
+                        </a>
+                    </div>
+                </div>
+                <div class="request-card" id="request-2">
+                    <h4>
+                        <img src="./assets/images/phil-s.jpg" alt="phil-sm-avatar" class="avatar-sm">
+                        <span>Phil K</span>
+                    </h4>
+                    <div class="action-btns">
+                        <a href="#" onclick="accept('#request-2')">
+                            <img src="./assets/icons/accept-circle.png" alt="accept-icon" class="btn-sm">
+                        </a>
+                        <a href="#" onclick="decline('#request-2')">
+                            <img src="./assets/icons/close-circle.png" alt="decline-icon" class="btn-sm">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="connections-card">
+                <div class="card-header">
+                    <span id="connections">500+</span>
+                    <h3>Your Connections</h3>
+                </div>
+                
+                <div class="connected-card">
+                    <h4>
+                        <img src="./assets/images/adrien-s.jpg" alt="adrien-sm-avatar" class="avatar-sm">
+                        <span>Adrien D</span>
+                    </h4>
+                </div>
+                <div class="connected-card">
+                    <h4>
+                        <img src="./assets/images/anne-s.jpg" alt="anne-sm-avatar" class="avatar-sm">
+                        <span>Anne J</span>
+                    </h4>
+                </div>
+                <div class="connected-card">
+                    <h4>
+                        <img src="./assets/images/alayne-s.jpg" alt="alayne-sm-avatar" class="avatar-sm">
+                        <span>Alayne T</span>
+                    </h4>
+                </div>
+                <div class="connected-card">
+                    <h4>
+                        <img src="./assets/images/arry-s.jpg" alt="arry-sm-avatar" class="avatar-sm">
+                        <span>Arry Y</span>
+                    </h4>
+                </div>
+                <hr>
+                <div class="view-more-tab">
+                    <a href="#">View More</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

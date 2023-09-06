@@ -20,7 +20,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    /* outline: 1px dotted red; */
 }
 
 
@@ -41,7 +40,6 @@ p {
 h1, h2, h3, h4 {
     line-height: 1;
     font-family: var(--ff-accent);
-    /* font-weight: 900; */
 }
 
 p, .user-card a {
