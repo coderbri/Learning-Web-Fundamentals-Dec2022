@@ -174,22 +174,24 @@ p.card__weather-description {
 
 /** Cookie **/
 #cookie__popup {
-    width: inherit;
+    width: 575px;
     
     display: flex;
     align-items: center;
     justify-content: center;
     
     position: fixed;
-    right: 27%;
+    left: 50%;
     bottom: 0;
-    left: 27%;
     
-    padding: 10px 20px;
+    padding: 10px 15px;
+    transform: translateX(-50%); /* Center it horizontally */
     background-color: var(--weather-card-bg-clr);
     border: 2px solid var(--outline-select-clr);
     border-radius: 5px;
 }
+
+
 
 #cookie__popup img {
     margin-right: 0.5rem;
@@ -198,7 +200,7 @@ p.card__weather-description {
 }
 
 #cookie__popup h4, #cookie__popup p {
-    padding: 0 20px 0 10px;
+    padding: 0 15px 0 10px;
 }
 
 #cookie__popup p {
@@ -209,9 +211,9 @@ p.card__weather-description {
 .accept-btn {
     margin-top: 10px;
     background: var(--button-bg-clr-300);
-    width: 125px;
-    /* width: 180px; */
+    width: 180px;
     padding: 0.5em 1em;
+    /* padding: 2px 5px; */
     
     font-family: inherit;
     font-weight: 700;
