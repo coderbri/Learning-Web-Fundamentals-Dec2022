@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --body-bg-clr: #eef8ff;
+    --weather-card-bg-clr: #e5e5e5;
+    --outline-select-clr: #898989;
+    --header-nav-bg-clr: #9BD4FF;
+    
+    --button-bg-clr-300: #93c5fd;
+    --button-bg-clr-400: #60a5fa;
+    
+    --body-ff-Open-Sans: 'Open Sans', sans-serif;
+    
+    --body-text-clr-900: #18181b;
+    --high-temp-text-clr-800: #991b1b;
+    --low-temp-text-clr-600: #2563eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-ff-Open-Sans);
+}
+
+body {
+    /* background: #E3F2FD; */
+    background: var(--body-bg-clr);
+    color: var(--body-text-clr-900);
+}
+
+img {
+    height: 75px;
+}
+
+.header__nav,
+.header__nav-links,
+.weather__nav,
+.temperature-toggle,
+.weather-cards,
+.cookie__popup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.container, .header__nav {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+}
+
+
+/** Header Nav **/
+header {
+    padding: 10px 20px;
+    background-color: var(--header-nav-bg-clr);
+}
+
+.header__nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-links {
+    list-style: none;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header__nav h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.header__nav-links a {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+
+/** Weather Nav **/
+.weather__nav {
+    padding: 15px 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #000;
+}
+
+.weather__nav h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.temperature-toggle p {
+    font-weight: 600;
+}
+
+.temperature-toggle select {
+    font-size: 1rem;
+    
+    color: var(--body-text-clr-900);
+    background-color: #fff;
+    padding: 5px 10px;
+    
+    border: 1px solid var(--outline-select-clr);
+    border-radius: 5px;
+}
+
+/** Weather Cards **/
+.weather-cards {
+    list-style: none;
+}
+
+.card {
+    background-color: var(--weather-card-bg-clr);
+    padding: 10px;
+    height: 225px;
+    width: 150px;
+    
+    text-align: center;
+    line-height: 2;
+    
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+
+.card h3 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card__weather-icon img {
+    border-radius: 100%;
+}
+
+p.card__weather-description {
+    font-weight: 600;
+}
+
+.card__weather-temperatures {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+}
+
+.card__weather-temperatures p {
+    font-weight: 700;
+}
+.temperature__high {
+    color: var(--high-temp-text-clr-800);
+}
+.temperature__low {
+    color: var(--low-temp-text-clr-600);
+}
+
+.temperature__high::after, .temperature__low::after {
+    content: "˚";
+}
+
+
+/** Cookie **/
+#cookie__popup {
+    width: inherit;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    right: 27%;
+    bottom: 0;
+    left: 27%;
+    
+    padding: 10px 20px;
+    background-color: var(--weather-card-bg-clr);
+    border: 2px solid var(--outline-select-clr);
+    border-radius: 5px;
+}
+
+#cookie__popup img {
+    margin-right: 0.5rem;
+    height: 60px;
+    width: 60px;
+}
+
+#cookie__popup h4, #cookie__popup p {
+    padding: 0 20px 0 10px;
+}
+
+#cookie__popup p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.accept-btn {
+    margin-top: 10px;
+    background: var(--button-bg-clr-300);
+    width: 125px;
+    /* width: 180px; */
+    padding: 0.5em 1em;
+    
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.8rem;
+    
+    border: 2px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+.accept-btn:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.accept-btn:active {
+    background-color: var(--button-bg-clr-400);
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
